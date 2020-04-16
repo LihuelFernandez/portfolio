@@ -18,6 +18,12 @@
     align-items: center;
     padding-left: 100px;
 }
+.fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
 
 .menu{
     margin: 0;
@@ -32,7 +38,6 @@
     margin: 0 15px;
 }
 
-
 .menu_link{
     color: white;
     text-decoration: none;
@@ -42,7 +47,7 @@
 .menu_link:hover{
     text-decoration: none;
     color: rgb(87, 197, 87);
-    animation: reverse;
+    
 }
 
 .menu_bar{
@@ -63,7 +68,7 @@
 
 
 
-/*INICIO ESTILOS DEL SECTION*/
+/*INICIO ESTILOS DEL SECTION NUMERO "1"*/
 
 #container{
     height: 600px;
@@ -100,10 +105,54 @@
 
 #lines-img{
     opacity: 0;
-    
+    z-index: 999;
+    transition: 1s ease-in-out;
 }
 
-/*FIN ESTILOS DEL SECTION*/
+/*FIN ESTILOS DEL SECTION NUMERO "1"*/
+
+
+
+/*INICIO ESTILOS DEL SECTION NUMERO "2"*/
+
+#container2{
+    background-color: rgb(3, 5, 31);
+    width: 100%;
+    min-height: 600px;
+}
+
+#bluecode-img{
+    width: 100%;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+}
+
+#container2-txt{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+#presentacion{
+    font-size: 5rem;
+}
+#presentacion:hover{
+    color: rgb(87, 197, 87);
+}
+
+#txt{
+    font-size: 3rem;
+}
+
+
+/*FIN ESTILOS DEL SECTION NUMERO "2"*/
+
+
+
+
+
+
+
 
 
 
@@ -121,7 +170,7 @@
 .mostrar .menu{
     visibility: visible;
     opacity: 1;
-    transition: 1s ease-in-out;
+    transition: 1.5s ease-in-out;
   }
   
 
@@ -143,6 +192,33 @@
         transform: rotate(360deg);
     }
 }
+
+/* MEDIA QUERY PARA SECTION NUMERO #1 */
+@media (max-width: 1024px) {
+    .display-1 {
+        font-size: 3rem;
+    }
+ }
+ 
+ @media (max-width: 768px) {
+     #main-content {
+         padding-top: 5rem;
+         padding-bottom: 5rem;
+         text-align: center;
+     }
+     #container {
+         height: unset;
+     }
+     #main-background {
+         height: 100%;
+     }
+ }
+ 
+ @media (max-width: 575.98px) { 
+     .spin {
+         max-width: 260px;
+     }
+  }
 
 
 
