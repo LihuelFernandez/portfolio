@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -16,87 +16,60 @@
 
   <body>
     
-    <!-- INICIO HEADER-->
-    <!--
-    <header>
-        <nav class="navbar navbar-dark navbar" >
-            <a class="row navbar-brand" href="#">
-            
-                <h1 class="h4">
-                    <img src="img/logolf.png" width="40" height="35" class="d-inline-block align-middle py-1" alt="">
-                    
-                </h1>
-            </a>
---><!--
-            <ul class="row navbar justify-content-end">
-                <li class="nav-item">
-                  <a class="navbar-text" href="#">INICIO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">SOBRE MI</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">APTITUDES</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
-        
-    </header>
--->
+
+    <!-- INICIO HEADER-->    
+        <header>
+            <nav id="main_nav" class="main_nav" >
+                <a class="navbar-brand mr-auto ml-5 text-white href="#">
+                    <h1 class="h4"> LF </h1>
+                </a>
+                
+                <ul class="menu">
+                    <li class="menu_item"> <a href="" class="menu_link">INICIO</a></li>
+                    <li class="menu_item"> <a href="" class="menu_link">SOBRE MI</a></li>
+                    <li class="menu_item"> <a href="" class="menu_link">EXPERIENCIA</a></li>
+                    <li class="menu_item"> <a href="" class="menu_link">CONTACTO</a></li>
+                </ul>
+
+                <div class="menu_bar">
+                    <div class="uno"></div>
+                    <div class="dos"></div>
+                </div>
+                
+            </nav>
+        </header>
     <!-- FIN HEADER-->
-
-    <nav class="container navbar navbar-expand-lg navbar-dark" >
-        <a class="navbar-brand" href="#">
-            
-            <h1 class="h4">
-                <img src="img/logo.png" width="40" height="35" class="d-inline-block align-middle py-1" alt="">
-                DepoteXtremo
-            </h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto text-center"  >
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Futbol <span class="sr-only">(Current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">NBA</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Tenis</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Formula 1</a>
-            </li>
-          </ul>
-          
-        </div>
-    </nav>
-
-
-
-
-
-
-    <nav class="containernavbar navbar-dark bg-dark">
-        <!-- Navbar content -->
-      </nav>
 
     <!-- INICIO HOME -->
 
-    <main class="container">
+    
 
 
         <!-- INICIO #1 HOME -->
 
-        <section class="d-flex justify-content-between align-items-center">
+        <section id="container">
+            <div id="main-background"></div>
+            <div id="main-content" class="container h-100">
+                <div class="row no-gutters h-100 d-flex">
 
+                    <div id="main-text" class="col-md-6 text-light align-self-center text-center">
+                        <h1 class="display-1 font-weight-bold mb-4 ">Lihuel Fernandez</h1>
+                        <h2>PROGRAMADOR Y COMERCIAL</h2>
+                        <p class="lead my-5 mb-5">Emprendedor, Creativo, y Proactivo.</p>
+                    </div>
+
+                    <div class="col-md-6 img-container align-self-center h-100">
+
+                        <img src="img/lines.svg" id="lines-img" class="position-absolute spin">
+                        <img src="img/bosque.jpeg" id="perfil-img" class="position-absolute">
+                        
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--
           <div class="col-8 text-center text-white">
             <h1 class="font-weight-bold">LIHUEL FERNANDEZ</h1>
             <h2>Emprendedor, Creativo, y Proactivo.</h2>
@@ -107,13 +80,14 @@
           <div class="col-4">
             <img src="img/lihuel2.jpeg" alt="..." class="rounded-circle my-5 py-4" width="100%">
           </div>
-
-        </section>
+-->
+        
 
         <!-- FIN #1 HOME -->
 
 
         <!-- INICIO #2 HOME -->
+        <!--
 
         <section class="d-flex p-2 bd-highlight flex-column text-center">
             <img src="img/code2.jpeg" alt="">
@@ -123,14 +97,13 @@
             </p>
             <img src="img/code2.jpeg" alt="">
         </section>
-        
-        <!-- FIN #2 HOME -->
+        -->
+        <!-- FIN #2 HOME 
 
         <section>
 
         </section>
-
-    </main>
+-->
 
     <!-- FIN HOME -->
 
@@ -139,5 +112,24 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/mostrar.js" ></script>
+
+    <script>
+        window.onload = function(){
+            setTimeout(function(){ 
+                document.getElementById("main-background").style.width= "100%";
+            }, 1000)
+            setTimeout(function(){ 
+                document.getElementById("main-text").style.opacity= "1";
+            }, 1500)
+            setTimeout(function(){ 
+                document.getElementById("perfil-img").style.opacity= "1";
+            }, 3500)
+            setTimeout(function(){ 
+                document.getElementById("lines-img").style.opacity= "1";
+            }, 2500)
+        }
+
+    </script>
   </body>
 </html>
