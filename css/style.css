@@ -2,12 +2,21 @@
 
 /*INICIO ESTILOS DEL HEADER*/
 
+.navbar-brand{
+    cursor: pointer;
+}
+.navbar-brand .h4:hover{
+    text-decoration: none;
+    color: rgb(87, 197, 87);
+}
+
 .main_nav{
     background: black;
     height: 50px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-left: 100px;
 }
 
 .menu{
@@ -29,6 +38,11 @@
     text-decoration: none;
     font-weight: bold;
 
+}
+.menu_link:hover{
+    text-decoration: none;
+    color: rgb(87, 197, 87);
+    animation: reverse;
 }
 
 .menu_bar{
@@ -88,18 +102,12 @@
     opacity: 0;
     
 }
-/*
-#perfil-img{
-    width: 50%;
-    height: 50%;
-    border-radius: 100%;
-}*/
 
-/*INICIO ESTILOS DEL SECTION*/
+/*FIN ESTILOS DEL SECTION*/
 
 
 
-/*ANIMACION*/
+/* - ANIMACIONES  - ANIMACIONES  - ANIMACIONES  - ANIMACIONES  - ANIMACIONES */
 
 /* NAV */
 .mostrar .uno{
@@ -113,14 +121,16 @@
 .mostrar .menu{
     visibility: visible;
     opacity: 1;
-}
+    transition: 1s ease-in-out;
+  }
+  
 
 /*SECTION*/
 .spin{
     width: 100%;
     max-width: 450px;
     animation-name: spin;
-    animation-direction: 4000ms;
+    animation-duration: 4000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
