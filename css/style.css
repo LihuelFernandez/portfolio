@@ -17,7 +17,9 @@
     justify-content: flex-end;
     align-items: center;
     padding-left: 100px;
+    
 }
+
 .fixed{
     position: fixed;
     width: 100%;
@@ -42,12 +44,10 @@
     color: white;
     text-decoration: none;
     font-weight: bold;
-
 }
 .menu_link:hover{
     text-decoration: none;
     color: rgb(87, 197, 87);
-    
 }
 
 .menu_bar{
@@ -149,9 +149,86 @@
 
 
 
+/* FOOTER INICIO DE ESTILOS */
+
+#footer{
+    background-color: black;
+    border-top: solid 4px rgb(87, 197, 87);
+    border-bottom: solid 4px rgb(87, 197, 87);
+}
+
+/*div*/
+.footcontainer{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    
+}
+/*
+                /* ul */
+.footcontainer .list-foot {
+    margin: 0px;
+    padding: 50px;
+    text-align: center;
+    
+}
+
+                            /* li */
+.footcontainer .list-foot .link-foot{
+    display: inline-block;
+    list-style: none;
+    
+}
+
+                                     /* a */
+.footcontainer .list-foot .link-foot .afoot{
+    width: 80px;
+    height: 80px;
+    background: white;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: solid 3px rgb(3, 5, 31);
+} 
+
+                                            /* i */
+.footcontainer .list-foot .link-foot .afoot .fab{
+    position: relative;
+    color: black;
+    transition: .5s;
+}
+
+.footcontainer .list-foot .link-foot .afoot:hover .fab{
+    transform: rotateY(360deg);
+}
+
+.footcontainer .list-foot .link-foot .afoot:before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(87, 197, 87);
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.footcontainer .list-foot .link-foot .afoot:hover:before{
+    top: 0;
+
+}
 
 
 
+
+
+/* FOOTER FIN DE ESTILOS */
 
 
 
