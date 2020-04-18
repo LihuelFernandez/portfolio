@@ -137,14 +137,19 @@ header{
 #presentacion{
     font-size: 5rem;
 }
+
 #presentacion:hover{
     color: rgb(87, 197, 87);
 }
 
 #txt{
     font-size: 2.5rem;
-    padding-right: ;
-    /* px-5 text-center mx-5 mb-5 mt-3 pb-3 */
+    
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 b:hover{
@@ -369,6 +374,13 @@ b:hover{
  }
 
  @media (max-width: 880px){
+    /*SECTION NUMERO "1" RESPONSIVE*/
+    .img-container{
+        min-height: 400px;
+    }
+    
+    /*FIN SECTION NUMERO "1" RESPONSIVE*/
+
      /*SECTION NUMERO "2" RESPONSIVE*/
 #container2{
     background-color: rgb(3, 5, 31);
@@ -387,6 +399,12 @@ b:hover{
     /*COMPARTE CON SOBREMI*/
 #txt{
     font-size: 2rem;
+    
+    padding-left: ;
+    padding-right: ;
+}
+#presentacion{
+    font-size: 4rem;
 }
 /*FIN SECTION NUMERO "2" RESPONSIVE*/
 
@@ -398,12 +416,46 @@ b:hover{
 
 }
 
+@media (max-width: 650px){
+    .display-1 {
+        font-size: 1rem;
+    }
+
+    #presentacion{
+        font-size: 3.5rem;
+    }
+
+    #container2-txt{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+     /*ICONS RESPONSIVE*/
+#iconme{
+    font-size: 2.5rem;
+}
+
+
+    #txt{
+        font-size: 2rem;
+        
+        padding-left: 0;
+        padding-right: 0;
+    
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+}
+
+
+
 
  
- @media (max-width: 575.98px) { 
+ @media (max-width: 560px) { 
      .spin {
-         max-width: 260px;
+         max-width: 300px;
      }
+     
   }
 
 
