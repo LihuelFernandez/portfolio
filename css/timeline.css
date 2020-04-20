@@ -93,6 +93,8 @@
 }
 
 
+
+
 @media all and (max-width: 600px){
 .timeline::after{
     left: 31px;
@@ -103,18 +105,47 @@
     padding-left: 70px;
     padding-right: 25px;
 }
+
+#tituloexp{
+    padding-top: 0;
+}
+
 .containerc::before{
     left: 60px;
     border: medium solid wheat;
     border-width: 10px 10px 10px 0;
     border-color: transparent green transparent transparent;
 }
-.left::after .right::after{
-    left: 15px;
+.right::after{
+    left: 18px;
+    right: 0;
 }
+
+.left::after{
+    left: 18px;
+    right: 0;
+}
+
 .right{
     left: 0%;
 }
+
+.title{
+    font-size: 2rem;
+}
+
+.subtitle{
+ font-size: 1.25rem;
+}
+
+p{
+ font-size: 1rem;
+}
+
+#iconexp{
+    left: 15px;
+}
+
 }
 
 
