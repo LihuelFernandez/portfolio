@@ -88,6 +88,17 @@ header{
     transition: 2s ease-in-out;
 }
 
+.titulo_p{
+    margin-bottom: 1.5rem;
+    font-size: 6rem;
+    line-height: 1.2;
+}
+
+.lead{
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
 .img-container{
     display: flex;
     justify-content: center;
@@ -132,10 +143,17 @@ header{
 #container2-txt{
     margin-left: 5rem;
     margin-right: 5rem;
+    padding: 2rem;
 }
+
 
 #presentacion{
     font-size: 5rem;
+    padding-top: 5rem;
+    }
+
+#subtitulo{
+padding-top: 1rem;
 }
 
 #presentacion:hover{
@@ -353,110 +371,245 @@ b:hover{
 
 
 /* MEDIA QUERY PARA SECTION NUMERO #1 */
-@media (max-width: 1024px) {
-    .display-1 {
-        font-size: 3rem;
-    }
- }
  
- @media (max-width: 992px) {
-     #main-content {
-         padding-top: 5rem;
-         padding-bottom: 5rem;
-         text-align: center;
-     }
-     #container {
-         height: unset;
-     }
-     #main-background {
-         height: 100%;
-     }
- }
+    @media /*EXTRA LARGE*/(max-width: 1200) {
 
- @media (max-width: 880px){
-    /*SECTION NUMERO "1" RESPONSIVE*/
-    .img-container{
-        min-height: 400px;
+    /*------------ 1# SECTION -------------*/
+    /*ajustar en una pantalla*/
+    
     }
     
-    /*FIN SECTION NUMERO "1" RESPONSIVE*/
-
-     /*SECTION NUMERO "2" RESPONSIVE*/
-#container2{
-    background-color: rgb(3, 5, 31);
-    width: 100%;
-    min-height: auto;
-}
-    /*COMPARTE CON SOBREMI*/
-#container2-txt{
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-    /*COMPARTE CON SOBREMI*/
-#presentacion{
-    font-size: 4rem;
-}
-    /*COMPARTE CON SOBREMI*/
-#txt{
-    font-size: 2rem;
+    @media /*LARGE*/(max-width: 992px) {
     
-    padding-left: ;
-    padding-right: ;
-}
-#presentacion{
-    font-size: 4rem;
-}
-/*FIN SECTION NUMERO "2" RESPONSIVE*/
-
-
- /*ICONS RESPONSIVE*/
-#iconme{
-        font-size: 3.5rem;
-}
-
-}
-
-@media (max-width: 650px){
-    .display-1 {
-        font-size: 1rem;
-    }
-
-    #presentacion{
-        font-size: 3.5rem;
-    }
-
-    #container2-txt{
-        margin-left: 3rem;
-        margin-right: 3rem;
-    }
-
-     /*ICONS RESPONSIVE*/
-#iconme{
-    font-size: 2.5rem;
-}
-
-
-    #txt{
-        font-size: 2rem;
+        /*------------ 0# NAVBAR --------------*/
+            /*Sin cambios*/
+    
+        /*------------ 1# SECTION -------------*/
+            #container {
+            height: unset;
+            width: 100%;
+            }
         
-        padding-left: 0;
-        padding-right: 0;
+            .display-1 {
+                font-size: 3rem;
+            } 
     
-        margin-bottom: 2rem;
-        margin-top: 2rem;
+            #main-content {
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+                text-align: center;
+            }
+    
+            #main-background {
+                height: 100%;
+            }
+    
+            .img-container{
+                min-height: 400px; 
+            }
+           
+    
+            #container2{
+                background-color: rgb(3, 5, 31);
+                width: 100%;
+                min-height: auto;
+            }
+    
+                /*SECTION #2 / SOBREMI / CONTACTO*/
+            #container2-txt{
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+    
+                /*SECTION #2 / SOBREMI*/
+
+            #presentacion{
+                font-size: 4rem;
+                padding-top: 5rem;
+                }
+    
+                #subtitulo{
+                padding-top: 1rem;
+                }
+    
+                /*SECTION #2 /SOBREMI*/
+            #txt{
+                font-size: 2rem;
+                
+                padding-left: ;
+                padding-right: ;
+            }
+    
+        /*------------ 2# SOBRE MI Y CONTACTO--*/
+    
+                /*SECTION #2" / SOBREMI / CONTACTO*/
+            /*#container2-txt*/
+    
+                /*SECTION #2" / SOBREMI*/
+            /*#presentacion*/
+                /*SECTION #2" /SOBREMI*/
+            /*#txt*/
+    
+            /*SOBREMI / CONTACTO*/
+            #iconme{
+                font-size: 3.5rem;
+            }
+    
+    
+        /*------------ 3# CONTACTO ------------*/
+            /*SOBREMI" / CONTACTO*/
+            /*#iconme*/
+    
+        /*------------ FOOTER -----------------*/
+    
     }
-}
+    
+    
+    @media /*MEDIUM*/ (max-width: 768px) {
+    
+        /*------------ 0# NAVBAR --------------*/
+            .main_nav{
+                background: transparent;
+                height: auto;
+            }
+            .menu{
+                display: flex;
+            }
+    
+            .menu_link{
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 0.9rem;
+            }
+            
+            .menu_item{
+                margin: 0 15px;
+            }
+    
+        /*------------ 1# SECTION -------------*/
+        .titulo_p{
+            margin-bottom: 1.5rem;
+            font-size: 5rem;
+            line-height: 1.2;
+        }
 
+        #subtitulo_p{
+            font-size: 1.5rem;
+        }
+        
+        .lead{
+            margin-bottom: 1.5rem;
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+        }
+    
+        /*------------ 2# SOBRE MI Y CONTACTO--*/
+    
+            /*SECTION #2 / SOBREMI / CONTACTO*/
+            #container2-txt{
+            margin-left: 1rem;
+            margin-right: 1rem;
+            padding: 1rem;
+            }
+            
+            /*SECTION #2 / SOBREMI*/
+            #presentacion{
+            font-size: 2rem;
+            padding-top: 5rem;
+            }
 
+            #subtitulo{
+            padding-top: 1rem;
+            }
+                
+            /*SECTION #2 /SOBREMI*/
+            #txt{
+            font-size: 2rem;
+                    
+            padding-left: 0;
+            padding-right: 0;
+                    
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            }
+            
+            /*SOBREMI" / CONTACTO*/
+            #iconme{
+                font-size: 2.5rem;
+            }
+            
 
+        /*------------ 3# CONTACTO ------------*/
+            /*SOBREMI" / CONTACTO*/
+            /*#iconme*/
+            
+    
+        /*------------ FOOTER -----------------*/
+    
+    
+    }
+    
+    @media /*SMALL*/(max-width: 576px) {
+    
+    /*------------ 0# NAVBAR --------------*/
+    
+    .main_nav{
+        background: transparent;
+        height: 50px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    
+    .menu{
+        display: block;
+        width: 80%;
+        margin-top: 4rem;
+        text-align: center;
+        background: black;
+        
+        
+    }
+    
+    .menu_item{
+        margin: 0;
+        border: 1px solid #fff;
+        
+    }
+    
+    .menu_link{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
 
- 
- @media (max-width: 560px) { 
-     .spin {
-         max-width: 300px;
+    /*------------ 1# SECTION -------------*/
+    
+    /*------------ 2# SOBRE MI Y CONTACTO--*/
+
+    #poligono{
+        width: 7rem;
+    }
+    #cuadrado{
+        width: 7rem;
+    }
+    
+    /*------------ 3# CONTACTO ------------*/
+    
+    /*------------ FOOTER -----------------*/
+    
+    
+    }
+    
+    @media /*EXTRA SMALL*/(max-width: 480px) { 
+        .spin {
+            max-width: 300px;
+        }
+        
      }
-     
-  }
-
+    
 
 
